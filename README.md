@@ -3,8 +3,11 @@
 Run
 
 ```
+npm install
 gatsby develop
 ```
+
+Website - https://pacozaa.github.io/Prompt-Generator/
 
 ## Coming Soon MEGA PROMPT
 ```
