@@ -1,15 +1,33 @@
-## Prompt Template Generator using Gatsby JS React
+# Prompt Template Generator using Gatsby JS React
 
-Run
+## How to Use It
+
+- Click Copy to Clipboard
+- Paste it onto your AI Chat
+
+## Screenshot and Usage
+
+![UI](./images/ui.png)
+
+![Claude Example](./images/claude.png)
+
+
+## Installation
 
 ```
+npm install -g gatsby-cli
 npm install
+```
+
+## Run
+
+```
 gatsby develop
 ```
 
 Website - https://pacozaa.github.io/Prompt-Generator/
 
-## Coming Soon MEGA PROMPT
+## Coming Soon - MEGA PROMPT
 ```
 Title: [Give the prompt a clear, descriptive title]
 
