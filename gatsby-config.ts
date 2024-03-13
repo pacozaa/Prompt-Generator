@@ -1,6 +1,7 @@
 import type { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
+  pathPrefix: "/Prompt-Generator",
   siteMetadata: {
     title: `LLM Engineering Magic`,
     siteUrl: `https://www.yourdomain.tld`
@@ -30,5 +31,8 @@ const config: GatsbyConfig = {
     __key: "pages"
   }]
 };
+// module.exports = {
+  
+// }
 
 export default config;
