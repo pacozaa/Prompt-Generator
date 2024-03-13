@@ -45,8 +45,8 @@ const PromptConstructorPage = () => {
         });
     }
     return (<>
-        <div className="w-full flex flex-row justify-between p-5 bg-orange-100 rounded-lg shadow-md items-start">
-            <div className="w-full m-5">
+        <div className="overflow-auto w-full flex flex-col justify-between p-5 bg-orange-100 rounded-lg shadow-md items-start md:flex-row">
+            <div className="w-full mb-5 md:w-1/2 md:m-5">
                 <InputField
                     label="Role"
                     id="role"
@@ -73,14 +73,14 @@ const PromptConstructorPage = () => {
                 />
             </div>
 
-            <div className="w-1/2 text-wrap">
+            <div className="w-full md:w-1/2 text-wrap">
                 <h3 className="w-full"style={styles.label}>Concatenated Text:</h3>
-                <pre className="text-wrap"  style={styles.output}>{concatenatedText}</pre>
+                <pre className="w-full text-wrap"  style={styles.output}>{concatenatedText}</pre>
                 <button style={styles.button} onClick={copyToClipboard}>Copy to Clipboard</button>
 
                 <h3 style={styles.label}>Concatenated Text (XML):</h3>
-                <pre className="text-wrap" style={styles.output}>{concatenatedTextXML}</pre>
-                <button style={styles.button} onClick={copyXMLToClipboard}>Copy to Clipboard</button>
+                <pre className="w-full text-wrap" style={styles.output}>{concatenatedTextXML}</pre>
+                <button style={styles.button} onClick={copyXMLToClipboard}>Copy XML to Clipboard</button>
             </div>
         </div>
     </>
