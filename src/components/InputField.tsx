@@ -10,9 +10,9 @@ interface InputFieldProps {
 const InputField: FC<InputFieldProps> = ({ label, id, value, onChange }) => {
   return (
     <div>
-      <label htmlFor={id} className="block mb-2 font-bold text-brown-600">{label}:</label>
+      <label htmlFor={id} className="block mb-2 font-bold text-yellow-700">{label}:</label>
       <input
-        className="w-full px-3 py-2 mb-4 border border-beige-300 rounded bg-white text-gray-700"
+        className="w-full px-3 py-2 mb-4 border border-red-50 rounded bg-white text-gray-700"
         type="text"
         id={id}
         value={value}
