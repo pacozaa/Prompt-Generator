@@ -1,16 +1,19 @@
 import * as React from "react"
 import type { HeadFC, PageProps } from "gatsby"
 import PromptConstructorPage from "./PromptConstructorPage"
+import Navbar from "../components/NavBarOne";
 
-const pageStyles = {
-  color: "#232129",
-  padding: 96,
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
 
 const IndexPage: React.FC<PageProps> = () => {
+  const links = [
+    { label: 'Home', href: '/' },
+    { label: 'About', href: '/about' },
+    { label: 'Services', href: '/services' },
+    { label: 'Contact', href: '/contact' },
+  ];
   return (
-    <main style={pageStyles}>
+    <main className="h-screen h-text-gray-900 font-sans">
+      {/* <Navbar brandName="Neon Navbar" links={links} /> */}
       <PromptConstructorPage/>
     </main>
   )

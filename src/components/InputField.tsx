@@ -1,5 +1,4 @@
 import React, { ChangeEvent, FC } from 'react';
-import { styles } from '../styles/styles';
 
 interface InputFieldProps {
   label: string;
@@ -11,9 +10,9 @@ interface InputFieldProps {
 const InputField: FC<InputFieldProps> = ({ label, id, value, onChange }) => {
   return (
     <div>
-      <label htmlFor={id} style={styles.label}>{label}:</label>
+      <label htmlFor={id} className="block mb-2 font-bold text-brown-600">{label}:</label>
       <input
-      style={styles.input}
+        className="w-full px-3 py-2 mb-4 border border-beige-300 rounded bg-white text-gray-700"
         type="text"
         id={id}
         value={value}

@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from "gatsby"
 import InputField from '../components/InputField';
-import { styles } from '../styles/styles';
 
 interface FormState {
     role: string;
@@ -45,7 +44,7 @@ const PromptConstructorPage = () => {
         });
     }
     return (<>
-        <div className="overflow-auto w-full flex flex-col justify-between p-5 bg-orange-100 rounded-lg shadow-md items-start md:flex-row">
+        <div className="overflow-auto w-full h-screen flex flex-col justify-between p-5 bg-orange-100 rounded-lg shadow-md items-start md:flex-row">
             <div className="w-full mb-5 md:w-1/2 md:m-5">
                 <InputField
                     label="Role"
@@ -73,14 +72,14 @@ const PromptConstructorPage = () => {
                 />
             </div>
 
-            <div className="w-full md:w-1/2 text-wrap">
-                <h3 className="w-full"style={styles.label}>Concatenated Text:</h3>
-                <pre className="w-full text-wrap"  style={styles.output}>{concatenatedText}</pre>
-                <button style={styles.button} onClick={copyToClipboard}>Copy to Clipboard</button>
+            <div className="w-full h-full md:w-1/2 text-wrap">
+                <h3 className="w-full block mb-2 font-bold text-brown-600">Concatenated Text:</h3>
+                <pre className="mt-6 p-4 bg-gray-200 border border-gray-300 rounded text-brown-700">{concatenatedText}</pre>
+                <button className="block mt-4 p-2 px-4 bg-[#e5d2c3] text-[#6d5d52] rounded-md cursor-pointer transition-colors duration-300" onClick={copyToClipboard}>Copy to Clipboard</button>
 
-                <h3 style={styles.label}>Concatenated Text (XML):</h3>
-                <pre className="w-full text-wrap" style={styles.output}>{concatenatedTextXML}</pre>
-                <button style={styles.button} onClick={copyXMLToClipboard}>Copy XML to Clipboard</button>
+                <h3 className="w-full block mb-2 font-bold text-brown-600">Concatenated Text (XML):</h3>
+                <pre className="mt-6 p-4 bg-gray-200 border border-gray-300 rounded text-brown-700">{concatenatedTextXML}</pre>
+                <button className="block mt-4 p-2 px-4 bg-[#e5d2c3] text-[#6d5d52] rounded-md cursor-pointer transition-colors duration-300" onClick={copyXMLToClipboard}>Copy XML to Clipboard</button>
             </div>
         </div>
     </>
